@@ -4,4 +4,7 @@ const nextConfig = {
   swcMinify: true,
 }
 
+const withTM = require('next-transpile-modules')(['animejs']);
+
 module.exports = nextConfig
+module.exports = withTM({})
