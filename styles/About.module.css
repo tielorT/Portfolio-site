@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    padding-top: 90px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.container h2 {
+    align-self: flex-start;
+}
+
+.content {
+    align-self: flex-start;
+    display: flex;
+    width: 100%;
+    font-size: large;
+}
+.content p {
+    align-self: flex-start;
+}
+
+.descr {
+    width: 400px;
+}
+
+.img {
+    margin-left: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.img::after {
+    background-color: #6B8490;
+    content: '';
+    width: 100%;
+    padding: 2px;
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}

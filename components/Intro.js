@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import styles from '../styles/Intro.module.css'
 import anime from 'animejs/lib/anime.es.js';
+import { FiChevronDown } from 'react-icons/fi'
 
 const Intro = () => {
     const canvasRef = useRef(null);
@@ -14,14 +15,14 @@ const Intro = () => {
         var pointerX = 0;
         var pointerY = 0;
         var tap = ('ontouchstart' in window || navigator.msMaxTouchPoints) ? 'touchstart' : 'mousedown';
-        var colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
+        var colors = ['#F2F7F5', '#DBB0C1', '#EA4C5C', '#424368'];
 
         function setCanvasSize() {
-        canvas.width = window.innerWidth * 2;
-        canvas.height = window.innerHeight * 2;
-        canvas.style.width = window.innerWidth + 'px';
-        canvas.style.height = window.innerHeight + 'px';
-        canvas.getContext('2d').scale(2, 2);
+        canvas.width = window.innerWidth ;
+        canvas.height = window.innerHeight ;
+        canvas.style.width = window.innerWidth ;
+        canvas.style.height = window.innerHeight ;
+        canvas.getContext('2d');
         }
 
         function updateCoords(e) {
@@ -92,24 +93,24 @@ const Intro = () => {
             x: function(p) { return p.endPos.x; },
             y: function(p) { return p.endPos.y; },
             radius: 0.1,
-            duration: anime.random(1200, 1800),
+            duration: anime.random(1200, 4000),
             easing: 'easeOutExpo',
             update: renderParticule
         })
             .add({
             targets: circle,
-            radius: anime.random(80, 160),
+            radius: anime.random(80, 200),
             lineWidth: 0,
             alpha: {
             value: 0,
             easing: 'linear',
-            duration: anime.random(600, 800),  
+            duration: anime.random(600, 1500),  
             },
-            duration: anime.random(1200, 1800),
+            duration: anime.random(1200, 3500),
             easing: 'easeOutExpo',
             update: renderParticule,
             offset: 0
-        });
+        }); 
         }
 
         var render = anime({
@@ -118,6 +119,20 @@ const Intro = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
         }
         });
+
+        var bouncingChev = anime({
+            targets: '.chev',
+            translateY: '5px',
+            duration: 300,
+            loop: true,
+            direction: 'alternate',
+            easing: 'easeInCubic',
+            scaleX: {
+                value: 1.05,
+                duration: 150,
+                delay: 268
+            }
+        })
 
         document.addEventListener(tap, function(e) {
         window.human = true;
@@ -140,14 +155,54 @@ const Intro = () => {
 
         autoClick();
         setCanvasSize();
-        window.addEventListener('resize', setCanvasSize, false);
+        window.addEventListener('resize', () => {
+            setCanvasSize()
+            autoClick()
+        }, false);
                 
           
     }, [])
 
+
+
     return (
-        <div style={{ width: '100%', height: '100%',backgroundColor: '#252930'}}>
-            <canvas ref={canvasRef}></canvas>
+        <div className={styles.canvasContainer}>
+            <canvas ref={canvasRef} className={styles.canvas}></canvas>
+            <div className={styles.introTitle}>
+                <div className={styles.title}>
+                    <div className={styles.word}>
+                        <span>H</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>l</span>
+                        <span>o</span>
+                        <span>,</span>
+                    </div>
+                    <div className={styles.word}>
+                        <span>I'</span>
+                        <span style={{marginRight: '10px'}}>m</span>
+                        <span>T</span>
+                        <span>i</span>
+                        <span>e</span>
+                        <span>l</span>
+                        <span>o</span>
+                        <span>r</span>
+                    </div>
+                    <div className={styles.word}>
+                        <span>T</span>
+                        <span>o</span>
+                        <span>m</span>
+                        <span>l</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>s</span>
+                        <span>o</span>
+                        <span>n</span>
+                    </div>
+                </div>
+                <p>Front-end developer and problem solver</p>
+            </div>
+            <button type='button' className={styles.button}>See Projects <FiChevronDown className='chev' /></button>
         </div>
     )
 }
