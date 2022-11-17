@@ -23,7 +23,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div style={{ position: 'relative'}}>
-                            <Image  className={styles.img} src={img1} width={400} height={300}/>
+                            <Image  className={styles.img} src={img1} width={400} height={300} alt='img'/>
                             <IconContext.Provider value={{ size: '50px'}}>
                             <div className={styles.externalLink}>
                                 <BiLinkExternal style={{ size: '90px'}}/>
@@ -42,7 +42,7 @@ const Projects = () => {
                             </div>   
                         </div>
                         <div style={{ position: 'relative'}}>
-                        <Image  className={styles.img} src={img2} width={400} height={300}/>
+                        <Image  className={styles.img} src={img2} width={400} height={300} alt='img'/>
                         <IconContext.Provider value={{ size: '50px'}}>
                             <div className={styles.externalLink}>
                                 <BiLinkExternal style={{ size: '90px'}}/>

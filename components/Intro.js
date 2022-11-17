@@ -179,7 +179,7 @@ const Intro = () => {
                         <span>,</span>
                     </div>
                     <div className={styles.word}>
-                        <span>I'</span>
+                        <span>I&apos;</span>
                         <span style={{marginRight: '10px'}}>m</span>
                         <span>T</span>
                         <span>i</span>

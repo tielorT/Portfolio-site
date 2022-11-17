@@ -10,7 +10,7 @@ const About = () => {
                 <div className={styles.content}>
                     <div className={styles.descr}>
                         <p>Hello, welcome to my portfolio site!
-                           I'm Tielor Tomlinson, an inspiring web
+                           I&apos;m Tielor Tomlinson, an inspiring web
                            developer with a burning passion for problem solving.
                            First found out about coding in 2020 then in 2021 i built 
                            a calculator app and since then i fell in love with programming.
@@ -18,7 +18,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className={styles.img}>
-                        <Image  src={img} width={400} height={400} />
+                        <Image  src={img} width={400} height={400} alt='img' />
                     </div>
                 </div>
             </div>
