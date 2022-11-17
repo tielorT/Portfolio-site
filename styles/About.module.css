@@ -45,3 +45,9 @@
     left: 20px;
     z-index: -1;
 }
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+}
