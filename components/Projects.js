@@ -1,7 +1,7 @@
 import styles from '../styles/Projects.module.css'
 import { IconContext } from "react-icons";
 import Image from 'next/image';
-import img1 from '../public/untitled.png'
+import img1 from '../public/img1.png'
 import img2 from '../public/img2.png'
 import { SiGithub } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
