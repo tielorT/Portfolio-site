@@ -37,6 +37,7 @@ const Contact = () => {
     return (
         <div className={styles.container}>
             <div className={styles.contactTitle}>
+                <a id='contact'></a>
                 <h2>Contact Me</h2> 
                 <span style={{ fontSize: '19px', color: '#6B8490', fontWeight: 'bold'}}>Fill the form out below to reach out. Can&apos;t wait to
                       bring value and create with you.

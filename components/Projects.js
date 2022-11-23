@@ -10,6 +10,7 @@ const Projects = () => {
     return (
         <div className={styles.container}>
             <h2>My Projects</h2>
+            <a id='projectLink'></a>
             <div style={{ width: '100%'}}>
                 <div className={styles.projectContent}>
                     <div className={styles.project}>

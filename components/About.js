@@ -8,6 +8,7 @@ const About = () => {
             <div className={styles.container}>
                 <h2>About Me</h2>
                 <div className={styles.content}>
+                    <a id='about'></a>
                     <div className={styles.descr}>
                         <p>Hello, welcome to my portfolio site!
                            I&apos;m Tielor Tomlinson, an inspiring web

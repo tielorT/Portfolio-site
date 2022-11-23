@@ -5,16 +5,13 @@ const Nav = () => {
         <div className={styles.container}>
             <nav className={styles.nav}>
                 <ul>
-                    <li>Home</li>
+                    <li><a href='#about'>About</a></li>
                 </ul>
                 <ul>
-                    <li>About</li>
+                    <li><a href='#projectLink'>Projects</a></li>
                 </ul>
                 <ul>
-                    <li>Work</li>
-                </ul>
-                <ul>
-                    <li>Contact</li>
+                    <li><a href='#contact'>Contact</a></li>
                 </ul>
             </nav>
         </div>

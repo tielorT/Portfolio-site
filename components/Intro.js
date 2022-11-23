@@ -202,7 +202,7 @@ const Intro = () => {
                 </div>
                 <p>Front-end developer and problem solver</p>
             </div>
-            <button type='button' className={styles.button}>See Projects <FiChevronDown className='chev' /></button>
+            <button type='button' className={styles.button}><a href='#projectLink'>See Projects</a><FiChevronDown className='chev' /></button>
         </div>
     )
 }
