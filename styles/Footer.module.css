@@ -1,0 +1,24 @@
+
+
+.content {
+    margin-top: 10px;
+    border-top: 1px solid #6B8490;
+    display: flex;
+    width: 100%;
+}
+
+.socials {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerEnd {
+    padding-right: 10px;
+    margin-left: auto;
+    place-self: flex-end;
+}
+
+.footerIcons:hover {
+    cursor: pointer;
+}

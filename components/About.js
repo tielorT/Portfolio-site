@@ -11,10 +11,10 @@ const About = () => {
                     <div className={styles.descr}>
                         <p>Hello, welcome to my portfolio site!
                            I&apos;m Tielor Tomlinson, an inspiring web
-                           developer with a burning passion for problem solving.
-                           First found out about coding in 2020 then in 2021 i built 
-                           a calculator app and since then i fell in love with programming.
-                           check out my other projects below!
+                           developer with a burning passion for problem solving. Born
+                           and raised in Oklahoma I First found out about coding in 2020 then 
+                           in 2021 i built  a calculator app and since then i fell in love with programming.
+                           check out my projects below!
                         </p>
                         <div>
                             <h2 style={{ color: '#3e7d80'}}>My skills</h2>
@@ -23,6 +23,7 @@ const About = () => {
                                 <div>SEO</div>
                                 <div>AWS</div>
                                 <div>JavaScript</div>
+                                <div>Node</div>
                                 <div>GIT</div>
                                 <div>React/Next</div>
                                 <div>Html/css</div>

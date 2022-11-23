@@ -1,5 +1,6 @@
 import styles from '../styles/Contact.module.css'
 import { useState } from 'react';
+import Footer from './Footer'
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -59,6 +60,7 @@ const Contact = () => {
                 </div>
                 <button className={styles.button} onClick={(e) => handleSubmit(e)} type='submit' name='submit' value='send'>Submit</button>
             </form>
+            <Footer />
         </div>
     )
 }

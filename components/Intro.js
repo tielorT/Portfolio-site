@@ -18,6 +18,8 @@ const Intro = () => {
         var colors = ['#F2F7F5', '#DBB0C1', '#EA4C5C', '#424368'];
 
         function setCanvasSize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;    
         canvas.style.width = window.innerWidth ;
         canvas.style.height = window.innerHeight ;
         canvas.getContext('2d');
