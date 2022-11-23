@@ -8,9 +8,9 @@ const Footer = () => {
                 <div className={styles.socials}>
                     <h3>SOCIAL</h3>
                     <div>
-                        <span className={styles.footerIcons}><a href='https://github.com/tielorT?tab=repositories' target='_blank'>
+                        <span className={styles.footerIcons}><a href='https://github.com/tielorT?tab=repositories' rel="noreferrer" target='_blank'>
                              <SiGithub style={{ color: '#3E7D80', margin: '5px'}} size='30px'/></a></span>
-                        <span className={styles.footerIcons}><a href='https://www.linkedin.com/in/tielor-tomlinson-29742624b/' target='_blank'>
+                        <span className={styles.footerIcons}><a href='https://www.linkedin.com/in/tielor-tomlinson-29742624b/' rel="noreferrer" target='_blank'>
                             <SiLinkedin style={{ color: '#3E7D80', margin: '5px'}} size='30px'/></a></span>
                     </div>
                 </div>

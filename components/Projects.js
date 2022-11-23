@@ -19,12 +19,12 @@ const Projects = () => {
                                 Utilizing nextjs/react, mongodb, and aws to create a functioning Website.
                             </p>
                             <div>
-                                <a href='https://github.com/tielorT/mexican-restaurant_site' target='_blank'>
+                                <a href='https://github.com/tielorT/mexican-restaurant_site' target='_blank' rel="noreferrer">
                                     <SiGithub className={styles.iconStyle} style={{ color: '#3E7D80'}} size='30px'/></a>
                             </div>
                         </div>
                         <div style={{ position: 'relative'}}>
-                            <a href='https://mexican-restaurant-site.vercel.app/' target='_blank'><Image  className={styles.img} src={img1} 
+                            <a href='https://mexican-restaurant-site.vercel.app/' target='_blank' rel="noreferrer"><Image  className={styles.img} src={img1} 
                                                                                    width={400} height={300} alt='img'/></a>
                         </div>
                     </div>
@@ -35,12 +35,12 @@ const Projects = () => {
                                showing you my Favourite sweets to eat! project
                                uses React/Nextjs bootstrap, and html/css.  </p>
                             <div>
-                                <a href='https://github.com/tielorT/baking_site' target='_blank'>
+                                <a href='https://github.com/tielorT/baking_site' target='_blank' rel="noreferrer">
                                     <SiGithub className={styles.iconStyle} style={{ color: '#3E7D80'}} size='30px'/></a>
                             </div>   
                         </div>
                         <div style={{ position: 'relative'}}>
-                        <a href='https://baking-site-rho.vercel.app/' target='_blank'><Image className={styles.img} src={img2} 
+                        <a href='https://baking-site-rho.vercel.app/' target='_blank' rel="noreferrer"><Image className={styles.img} src={img2} 
                                                                              width={400} height={300} alt='img'/></a>
                         </div>
                     </div>
