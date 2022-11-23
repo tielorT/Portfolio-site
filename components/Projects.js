@@ -19,16 +19,11 @@ const Projects = () => {
                                 Utilizing nextjs/react, mongodb, and aws to create a functioning Website.
                             </p>
                             <div>
-                                <SiGithub />
+                                <SiGithub className={styles.iconStyle} style={{ color: '#3E7D80'}} size='30px'/>
                             </div>
                         </div>
                         <div style={{ position: 'relative'}}>
                             <Image  className={styles.img} src={img1} width={400} height={300} alt='img'/>
-                            <IconContext.Provider value={{ size: '50px'}}>
-                            <div className={styles.externalLink}>
-                                <BiLinkExternal style={{ size: '90px'}}/>
-                            </div>
-                            </IconContext.Provider>
                         </div>
                     </div>
                     <div className={styles.project}>
@@ -37,17 +32,12 @@ const Projects = () => {
                             <p>A Website to showcase my front-end abilities while 
                                showing you my Favourite sweets to eat! project
                                uses React/Nextjs bootstrap, and html/css.  </p>
-                            <div>
-                                <SiGithub />
+                            <div >
+                                <SiGithub className={styles.iconStyle} style={{ color: '#3E7D80'}} size='30px'/>
                             </div>   
                         </div>
                         <div style={{ position: 'relative'}}>
                         <Image  className={styles.img} src={img2} width={400} height={300} alt='img'/>
-                        <IconContext.Provider value={{ size: '50px'}}>
-                            <div className={styles.externalLink}>
-                                <BiLinkExternal style={{ size: '90px'}}/>
-                            </div>
-                            </IconContext.Provider>
                         </div>
                     </div>
                 </div>

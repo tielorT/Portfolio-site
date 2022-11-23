@@ -4,7 +4,7 @@ import img from '../public/me.jpg'
 
 const About = () => {
     return (
-        <div>
+        <div className={styles.background}>
             <div className={styles.container}>
                 <h2>About Me</h2>
                 <div className={styles.content}>
@@ -16,6 +16,18 @@ const About = () => {
                            a calculator app and since then i fell in love with programming.
                            check out my other projects below!
                         </p>
+                        <div>
+                            <h2 style={{ color: '#3e7d80'}}>My skills</h2>
+                            <div className={styles.skills}>
+                                <div>MongoDB</div>
+                                <div>SEO</div>
+                                <div>AWS</div>
+                                <div>JavaScript</div>
+                                <div>GIT</div>
+                                <div>React/Next</div>
+                                <div>Html/css</div>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.img}>
                         <Image  src={img} width={400} height={400} alt='img' />

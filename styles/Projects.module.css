@@ -5,7 +5,7 @@
     align-items: center;
 }
 .container h2 {
-    margin: 80px 0;
+    margin: 50px 0;
 }
 
 .projectContent {
@@ -23,21 +23,12 @@
     color: #6B8490;
 }
 
+.iconStyle:hover {
+    cursor: pointer;
+}
+
 .img:hover {
     -webkit-filter: grayscale(50%);
     cursor: pointer;
     filter:  grayscale(50%);
-}
-
-.externalLink {
-    position: absolute;
-    visibility: hidden;
-    z-index: 1;
-    top: 150px;
-    left: 160px;
-    filter: brightness(0.5)
-            sepia(1);
-}
-.externalLink:hover {
-    visibility: visible;
 }

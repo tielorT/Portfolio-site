@@ -17,14 +17,15 @@
     align-self: flex-start;
     display: flex;
     width: 100%;
-    font-size: large;
 }
 .content p {
+    font-size: 20px;
     align-self: flex-start;
 }
 
 .descr {
     width: 400px;
+    color: #6B8490;
 }
 
 .img {
@@ -34,7 +35,7 @@
 }
 
 .img::after {
-    background-color: #6B8490;
+    background-color: #3E7D80;
     content: '';
     width: 100%;
     padding: 2px;
@@ -44,6 +45,19 @@
     top: 20px;
     left: 20px;
     z-index: -1;
+}
+
+.skills {
+    color: #fff;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.skills div {
+    margin-right: 15px;
+    padding-bottom: 10px;
 }
 
 @media (max-width: 600px) {

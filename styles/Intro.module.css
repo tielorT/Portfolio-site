@@ -32,7 +32,7 @@
     width: 300px;
     padding: 5px;
     font-size: 17px;
-    border: 1px solid #6B8490;
+    border: none;
 }
 
 .button:hover {

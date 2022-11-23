@@ -18,8 +18,6 @@ const Intro = () => {
         var colors = ['#F2F7F5', '#DBB0C1', '#EA4C5C', '#424368'];
 
         function setCanvasSize() {
-        canvas.width = window.innerWidth ;
-        canvas.height = window.innerHeight ;
         canvas.style.width = window.innerWidth ;
         canvas.style.height = window.innerHeight ;
         canvas.getContext('2d');
@@ -150,7 +148,7 @@ const Intro = () => {
             anime.random(centerX-50, centerX+50), 
             anime.random(centerY-50, centerY+50)
         );
-        anime({duration: 200}).finished.then(autoClick);
+        anime({duration: 1000}).finished.then(autoClick);
         }
 
         autoClick();
@@ -188,7 +186,7 @@ const Intro = () => {
                         <span>o</span>
                         <span>r</span>
                     </div>
-                    <div className={styles.word}>
+                    <div className={styles.word} style={{ color: '#3e7d80'}}>
                         <span>T</span>
                         <span>o</span>
                         <span>m</span>
