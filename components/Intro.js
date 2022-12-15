@@ -21,7 +21,7 @@ const Intro = () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;    
         canvas.style.width = window.innerWidth ;
-        canvas.style.height = '600px';
+        canvas.style.height = '650px';
         canvas.getContext('2d');
         }
 
