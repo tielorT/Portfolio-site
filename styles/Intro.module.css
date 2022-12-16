@@ -78,6 +78,7 @@
 @media (max-width: 400px) {
     .introTitle {
         left: 0px;
+        right: 15px;
     }
 }
 
