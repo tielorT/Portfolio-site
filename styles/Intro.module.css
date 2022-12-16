@@ -78,7 +78,8 @@
 @media (max-width: 400px) {
     .introTitle {
         left: 0px;
-        right: 15px;
+        right: 30px;
+        align-items: flex-start;
     }
 }
 
